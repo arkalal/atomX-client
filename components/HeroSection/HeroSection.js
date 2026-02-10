@@ -86,10 +86,7 @@ const HeroSection = () => {
           autoPlay
           poster="/hero-poster.jpg"
         >
-          <source
-            src="/videos/We_are_redesigning_202602091433_dkzzb.mp4"
-            type="video/mp4"
-          />
+          <source src="/videos/atomx2.mp4" type="video/mp4" />
         </video>
         <div className="hero-card-overlay" />
 

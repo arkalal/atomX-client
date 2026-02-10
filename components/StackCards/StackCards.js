@@ -78,13 +78,23 @@ const StackCards = () => {
           ease: "none",
         });
 
-        // Scale down and dim the card behind
+        // Scale down the card behind
         tl.to(
           cards[i - 1].querySelector(".stack-card-inner"),
           {
             scale: 0.93,
             borderRadius: "24px",
-            filter: "brightness(0.5)",
+            duration: 1,
+            ease: "none",
+          },
+          "<",
+        );
+
+        // Dim the card behind using an overlay
+        tl.to(
+          cards[i - 1].querySelector(".stack-card-dim"),
+          {
+            opacity: 0.45,
             duration: 1,
             ease: "none",
           },
@@ -114,6 +124,7 @@ const StackCards = () => {
                 loading="eager"
               />
               <div className="stack-card-overlay" />
+              <div className="stack-card-dim" />
               <div className="stack-card-content">
                 <span className="stack-card-category">{card.category}</span>
                 <h3 className="stack-card-title">

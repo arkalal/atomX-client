@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useLayoutEffect } from "react";
+import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Footer.scss";
@@ -59,9 +60,23 @@ const Footer = () => {
         <span className="footer-copy">
           &copy; atomX {new Date().getFullYear()}
         </span>
-        <span className="footer-privacy">
-          We respect your <a href="/privacy">privacy</a>
-        </span>
+        <div className="footer-links">
+          <Link href="/contact" className="footer-link">
+            Contact
+          </Link>
+          <Link href="/privacy" className="footer-link">
+            Privacy Policy
+          </Link>
+          <Link href="/refund-cancellation" className="footer-link">
+            Refund Policy
+          </Link>
+          <Link href="/terms" className="footer-link">
+            Terms & Conditions
+          </Link>
+          <Link href="/gdpr" className="footer-link">
+            GDPR
+          </Link>
+        </div>
       </div>
     </footer>
   );
