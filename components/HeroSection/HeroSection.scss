@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #d4a574;
+  background: #feebdf;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,24 +15,22 @@
    ============================================ */
 .hero-card-wrapper {
   position: relative;
-  width: 92%;
-  height: 92vh;
-  border-radius: 16px;
+  width: 96%;
+  height: 96vh;
+  border-radius: 12px;
   overflow: hidden;
   z-index: 15;
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
 }
 
 .hero-video {
+  display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .hero-card-overlay {
@@ -65,7 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.6rem 2.2rem 2.2rem;
+  padding: 1.8rem 2.5rem 2.8rem;
   box-sizing: border-box;
   pointer-events: none;
   opacity: 0;
@@ -92,21 +90,21 @@
 .hero-menu-btn {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.7rem;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #fff;
-  padding: 0.6rem 1.15rem;
+  padding: 0.75rem 1.4rem;
   border-radius: 50px;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-family: var(--font-sans);
   cursor: pointer;
   transition: background 0.3s ease;
 
   svg {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   &:hover {
@@ -119,11 +117,11 @@
   left: 50%;
   transform: translateX(-50%);
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 2.5rem;
   color: #fff;
-  letter-spacing: 0.05em;
-  font-weight: 400;
-  opacity: 0.9;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  opacity: 1;
 }
 
 .hero-nav-brand {
@@ -140,9 +138,9 @@
   background: #fff;
   color: #111;
   border: none;
-  padding: 0.6rem 1.4rem;
+  padding: 0.75rem 1.6rem;
   border-radius: 50px;
-  font-size: 0.83rem;
+  font-size: 0.92rem;
   font-family: var(--font-sans);
   font-weight: 500;
   cursor: pointer;
@@ -155,21 +153,21 @@
 }
 
 .hero-nav-cta-icon {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  background: #e84d8a;
+  background: #e0524f;
   border: none;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    background: #d43d7a;
+    background: #c9433f;
   }
 }
 
@@ -189,26 +187,26 @@
 
 .hero-heading {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
   color: #fff;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.05;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
 .hero-bottom-right {
-  flex: 0 1 370px;
+  flex: 0 1 420px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.1rem;
+  gap: 1.3rem;
 }
 
 .hero-subtext {
   font-family: var(--font-sans);
-  font-size: clamp(0.82rem, 1vw, 1rem);
-  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(0.92rem, 1.15vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.55;
   margin: 0;
   font-weight: 300;
@@ -217,15 +215,15 @@
 .hero-cta-bottom {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.65rem;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
-  padding: 0.55rem 0.65rem 0.55rem 1.3rem;
+  padding: 0.75rem 0.85rem 0.75rem 1.7rem;
   border-radius: 50px;
-  font-size: 0.88rem;
+  font-size: 1.02rem;
   font-family: var(--font-sans);
   cursor: pointer;
   transition: background 0.3s ease;
@@ -239,11 +237,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.15);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 /* ============================================
@@ -251,9 +249,9 @@
    ============================================ */
 @media (max-width: 768px) {
   .hero-card-wrapper {
-    width: 94% !important;
-    height: 88vh !important;
-    border-radius: 14px !important;
+    width: 96% !important;
+    height: 94vh !important;
+    border-radius: 10px !important;
   }
 
   .hero-content {

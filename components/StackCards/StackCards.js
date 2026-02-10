@@ -9,25 +9,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const cardsData = [
   {
-    category: "AI SOLUTIONS",
-    title: "AI-Powered\nAnalytics Platform",
+    category: "CASHLESS PAYMENTS",
+    title: "Every Second\nSells",
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=800&fit=crop",
-    buttons: ["Explore More", "EXP"],
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=800&fit=crop",
+    pills: [">1 Second", "Works Offline", "Zero Cash Handling"],
+    cta: "Explore Cashless Payments",
   },
   {
-    category: "WORKSHOPS",
-    title: "Innovation Sprint\nWorkshop",
+    category: "TapX",
+    title: "Tap. Pay.\nDone.",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=800&fit=crop",
-    buttons: ["Explore More", "EXP"],
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=800&fit=crop",
+    pills: [
+      "1-Second Transactions",
+      "Offline-First Payments",
+      "Post-Event Reports",
+    ],
+    cta: "Explore TapX",
   },
   {
-    category: "CONSULTING",
-    title: "Digital Transformation\nStrategy",
+    category: "ACCESS CONTROL",
+    title: "Entry Without\nExcuses",
     image:
-      "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&h=800&fit=crop",
-    buttons: ["Explore More", "EXP"],
+      "https://images.unsplash.com/photo-1558002038-1055907df827?w=1200&h=800&fit=crop",
+    pills: ["Facial Recognition", "RFID & QR", "Real-Time Tracking"],
+    cta: "Explore Access Control",
   },
 ];
 
@@ -117,13 +124,14 @@ const StackCards = () => {
                     </React.Fragment>
                   ))}
                 </h3>
-                <div className="stack-card-buttons">
-                  {card.buttons.map((btn, i) => (
-                    <button key={i} className="stack-card-btn">
-                      {btn}
-                    </button>
+                <div className="stack-card-pills">
+                  {card.pills.map((pill, i) => (
+                    <span key={i} className="stack-card-pill">
+                      {pill}
+                    </span>
                   ))}
                 </div>
+                <button className="stack-card-cta">{card.cta}</button>
               </div>
             </div>
           </div>

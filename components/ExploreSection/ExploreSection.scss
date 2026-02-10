@@ -1,14 +1,14 @@
 .explore-section {
   width: 100%;
   min-height: 100vh;
-  background: #f5ece0;
+  background: #feebdf;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8rem 2rem;
   position: relative;
   overflow: hidden;
-  cursor: crosshair;
+  cursor: default;
 }
 
 .explore-trail-container {
@@ -93,7 +93,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #e84d8a;
+  background: #e0524f;
   color: #fff;
   font-size: 1rem;
 }

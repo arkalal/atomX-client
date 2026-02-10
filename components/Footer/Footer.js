@@ -51,12 +51,14 @@ const Footer = () => {
           atomX
         </h2>
         <p className="footer-tagline" ref={taglineRef}>
-          THE <strong>OFFICIAL</strong> INNOVATION PARTNER FOR YOUR DIGITAL
-          TRANSFORMATION
+          THE <strong>OFFICIAL</strong> CASHLESS PAYMENTS &amp; ACCESS CONTROL
+          PLATFORM FOR LIVE EVENTS
         </p>
       </div>
       <div className="footer-bottom" ref={bottomRef}>
-        <span className="footer-copy">&copy; atomX {new Date().getFullYear()}</span>
+        <span className="footer-copy">
+          &copy; atomX {new Date().getFullYear()}
+        </span>
         <span className="footer-privacy">
           We respect your <a href="/privacy">privacy</a>
         </span>

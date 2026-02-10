@@ -44,7 +44,7 @@ const ClosingCTA = () => {
           duration: 0.5,
           ease: "power3.out",
         },
-        "-=0.2"
+        "-=0.2",
       );
     }, sectionRef);
 
@@ -56,25 +56,27 @@ const ClosingCTA = () => {
       <div className="closing-cta-content">
         <p className="closing-cta-text" ref={textRef}>
           <span className="closing-word">From</span>{" "}
-          <span className="closing-word closing-icon">🤖</span>{" "}
+          <span className="closing-word closing-icon">💳</span>{" "}
           <span className="closing-word closing-highlight closing-highlight--cyan">
-            AI-powered analytics
+            cashless payments
           </span>{" "}
           <span className="closing-word">to</span>{" "}
-          <span className="closing-word closing-icon">💡</span>{" "}
+          <span className="closing-word closing-icon">�</span>{" "}
           <span className="closing-word closing-highlight closing-highlight--lavender">
-            innovation workshops,
+            access control,
           </span>{" "}
-          <span className="closing-word closing-icon">🚀</span>{" "}
+          <span className="closing-word closing-icon">�</span>{" "}
           <span className="closing-word">discover</span>{" "}
           <span className="closing-word closing-highlight closing-highlight--pink">
-            digital transformation
+            real-time crowd analytics
           </span>{" "}
-          <span className="closing-word">and tech moments à la atomX.</span>
+          <span className="closing-word">
+            and seamless event tech by AtomX.
+          </span>
         </p>
         <div className="closing-cta-btn-wrap" ref={ctaRef}>
           <button className="closing-cta-btn">
-            <span>View Experiences</span>
+            <span>Get Started</span>
             <span className="closing-cta-btn-arrow">
               <GoArrowUpRight />
             </span>

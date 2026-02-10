@@ -134,18 +134,20 @@ const HeroSection = () => {
           <div className="hero-bottom">
             <div className="hero-bottom-left">
               <h2 className="hero-heading">
-                Innovate
+                End-to-end
                 <br />
-                beyond what
+                cashless payments
                 <br />
-                you imagine
+                and access control
+                <br />
+                for live events.
               </h2>
             </div>
 
             <div className="hero-bottom-right">
               <p className="hero-subtext">
-                Built for visionaries who don&apos;t just follow trends — they
-                set them. Technology that transforms ideas into reality.
+                Built for organizers who need speed at scale, control on ground,
+                and real-time visibility across every transaction and entry.
               </p>
               <motion.button
                 className="hero-cta-bottom"

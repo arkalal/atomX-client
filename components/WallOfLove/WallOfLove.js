@@ -41,7 +41,7 @@ const WallOfLove = () => {
             duration: 0.8,
             ease: "power3.out",
           },
-          "-=0.5"
+          "-=0.5",
         )
         .from(
           line3Ref.current,
@@ -51,7 +51,7 @@ const WallOfLove = () => {
             duration: 0.8,
             ease: "power3.out",
           },
-          "-=0.5"
+          "-=0.5",
         )
         .from(
           ctaRef.current,
@@ -61,7 +61,7 @@ const WallOfLove = () => {
             duration: 0.6,
             ease: "power3.out",
           },
-          "-=0.3"
+          "-=0.3",
         );
     }, sectionRef);
 
@@ -73,18 +73,18 @@ const WallOfLove = () => {
       <div className="wall-of-love-content">
         <h2 className="wall-of-love-heading">
           <span className="wall-of-love-line" ref={line1Ref}>
-            WALL
+            RUN YOUR
           </span>
           <span className="wall-of-love-line" ref={line2Ref}>
-            OF
+            NEXT
           </span>
           <span className="wall-of-love-line" ref={line3Ref}>
-            LOVE
+            EVENTS
           </span>
         </h2>
         <div className="wall-of-love-cta" ref={ctaRef}>
           <button className="wall-of-love-btn">
-            <span>Book Now</span>
+            <span>Make Your Event Seamless</span>
             <span className="wall-of-love-btn-arrow">
               <GoArrowUpRight />
             </span>

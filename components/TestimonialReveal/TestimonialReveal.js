@@ -170,16 +170,16 @@ const TestimonialReveal = () => {
             ★ ★ ★ ★ ★
           </div>
           <span className="testimonial-reviewer" ref={nameRef}>
-            SARAH, UNITED STATES
+            RAJESH, EVENT DIRECTOR — INDIA
           </span>
           <p className="testimonial-quote" ref={quoteRef}>
-            It was such a transformative and empowering experience. Thank you,
-            atomX, for such a memorable and enriching workshop. We can&apos;t
-            recommend it highly enough!
+            AtomX transformed our festival operations overnight. Zero cash
+            queues, real-time revenue tracking, and seamless entry for 50,000+
+            attendees. We&apos;ll never go back.
           </p>
           <div className="testimonial-cta" ref={ctaRef}>
             <button className="testimonial-cta-btn">
-              <span>View Experiences</span>
+              <span>See How It Works</span>
               <span className="testimonial-cta-arrow">
                 <GoArrowUpRight />
               </span>

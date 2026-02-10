@@ -26,33 +26,26 @@ const trailImages = [
 ];
 
 function playTrailAnimation(img) {
-  const tl = gsap.timeline();
-  tl.fromTo(
-    img,
-    { opacity: 0, scale: 0 },
-    {
-      opacity: 1,
-      scale: 1,
-      duration: 0.6,
-      ease: "elastic.out(1,0.3)",
-    },
-  )
-    .to(
-      img,
-      {
-        rotation: `random([-25, 25])`,
-      },
-      "<",
-    )
-    .to(
-      img,
-      {
-        y: "+=120vh",
-        ease: "back.in(0.4)",
-        duration: 1.2,
-      },
-      0,
-    );
+  gsap.killTweensOf(img);
+  const rotation = gsap.utils.random(-12, 12);
+  gsap.set(img, {
+    rotation: rotation,
+    scale: 0.6,
+    opacity: 0,
+  });
+  gsap.to(img, {
+    opacity: 1,
+    scale: 1,
+    duration: 0.45,
+    ease: "power2.out",
+  });
+  gsap.to(img, {
+    opacity: 0,
+    scale: 0.9,
+    duration: 0.5,
+    delay: 0.6,
+    ease: "power1.inOut",
+  });
 }
 
 const ExploreSection = () => {
@@ -88,10 +81,8 @@ const ExploreSection = () => {
         const img = flair[wrappedIndex];
         if (!img) return;
 
-        gsap.killTweensOf(img);
         gsap.set(img, { clearProps: "all" });
         gsap.set(img, {
-          opacity: 1,
           left: mp.x,
           top: mp.y,
           xPercent: -50,
@@ -133,18 +124,16 @@ const ExploreSection = () => {
       <div className="explore-content">
         <span className="explore-subtitle">EXPLORE AT YOUR OWN PACE</span>
         <h2 className="explore-heading">
-          Unlock The
+          From Entry <br /> to Exit,
           <br />
-          atomX Innovation
-          <br />
-          Experiences
+          Fully Controlled
         </h2>
         <motion.button
           className="explore-cta"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span>View Experiences</span>
+          <span>Explore Products</span>
           <span className="explore-cta-arrow">
             <GoArrowUpRight />
           </span>

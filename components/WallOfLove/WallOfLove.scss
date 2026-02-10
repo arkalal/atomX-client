@@ -1,7 +1,7 @@
 .wall-of-love {
   width: 100%;
   min-height: 100vh;
-  background: #f5ece0;
+  background: #feebdf;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +52,9 @@
   font-weight: 400;
   cursor: pointer;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 
   &:hover {
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
@@ -67,7 +69,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #e84d8a;
+  background: #e0524f;
   color: #fff;
   font-size: 1.1rem;
 }

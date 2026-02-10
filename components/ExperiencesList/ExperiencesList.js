@@ -7,39 +7,44 @@ import "./ExperiencesList.scss";
 
 const experiencesData = [
   {
-    title: "AI-Powered Analytics Platform",
-    tags: ["AI SOLUTIONS", "4 WEEKS", "CUSTOM PRICING"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=600&fit=crop",
+    title: "Cashless Payments",
+    tags: ["NFC", "RFID WRISTBANDS", "TAP & PAY"],
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=600&fit=crop",
     hoverColor: "rgba(200, 180, 220, 0.4)",
-    icon: "🤖",
+    icon: "💳",
   },
   {
-    title: "Innovation Sprint Workshop",
-    tags: ["WORKSHOPS", "2.5 HOURS", "FROM $299"],
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop",
+    title: "TapX — Point of Sale",
+    tags: ["1-SEC TRANSACTIONS", "OFFLINE-FIRST", "REAL-TIME REPORTS"],
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=600&fit=crop",
     hoverColor: "rgba(180, 210, 230, 0.4)",
-    icon: "💡",
+    icon: "⚡",
   },
   {
-    title: "Digital Transformation Strategy",
-    tags: ["CONSULTING", "3 MONTHS", "FROM $1,500"],
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=600&fit=crop",
+    title: "Access Control",
+    tags: ["FACIAL RECOGNITION", "RFID & QR", "LIVE TRACKING"],
+    image:
+      "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&h=600&fit=crop",
     hoverColor: "rgba(220, 190, 200, 0.4)",
-    icon: "🚀",
+    icon: "�",
   },
   {
-    title: "Custom Software Development",
-    tags: ["DEVELOPMENT", "6 MONTHS", "CUSTOM PRICING"],
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=600&fit=crop",
+    title: "Crowd Analytics",
+    tags: ["HEATMAPS", "REAL-TIME DATA", "ATTENDEE INSIGHTS"],
+    image:
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=600&fit=crop",
     hoverColor: "rgba(180, 220, 200, 0.4)",
-    icon: "⚙️",
+    icon: "📊",
   },
   {
-    title: "Tech Leadership Training",
-    tags: ["TRAINING", "1 WEEK", "FROM $499"],
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=600&fit=crop",
+    title: "Event Integration Suite",
+    tags: ["API ACCESS", "CUSTOM SETUP", "WHITE-LABEL"],
+    image:
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=600&fit=crop",
     hoverColor: "rgba(210, 200, 170, 0.4)",
-    icon: "🎯",
+    icon: "🔗",
   },
 ];
 
@@ -80,10 +85,8 @@ const ExperiencesList = () => {
         }
       };
 
-      const startFollow = () =>
-        document.addEventListener("mousemove", align);
-      const stopFollow = () =>
-        document.removeEventListener("mousemove", align);
+      const startFollow = () => document.addEventListener("mousemove", align);
+      const stopFollow = () => document.removeEventListener("mousemove", align);
 
       const fade = gsap.to(image, {
         autoAlpha: 1,
