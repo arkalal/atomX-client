@@ -1,5 +1,6 @@
 import TapXHero from "../../../components/TapXHero/TapXHero";
 import TapXFeatures from "../../../components/TapXFeatures/TapXFeatures";
+import ProblemSolution from "../../../components/ProblemSolution/ProblemSolution";
 import Footer from "../../../components/Footer/Footer";
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function TapXPage() {
     <main>
       <TapXHero />
       <TapXFeatures />
+      <ProblemSolution />
       <Footer />
     </main>
   );
